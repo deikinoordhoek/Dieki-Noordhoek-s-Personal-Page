@@ -1,6 +1,13 @@
 body{
-	background: url('background.jpg');	
+	background: #222;
 	overflow: hidden;
+}
+.content{
+	background: url('background.jpg');	
+	height: 100%;
+	width: 110%;
+	margin-left: -10px;
+	margin-right: -10px;
 }
 .header {
 	background: url('header-background.png');
