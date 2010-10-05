@@ -1,7 +1,32 @@
-.name{
-	margin-top: 300px;
-	font-size: 100px;
-	text-align: center;
-	font-family: Sans;
-	text-shadow: 2px 2px 3px #aaa;
+body{
+	background: url('background.png');	
+	overflow: hidden;
+}
+.header {
+	background: url('header-background.png');
+
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: -10px;
+}
+#navlist a {
+	text-decoration: none;
+	color: #eee;
+}
+#navlist li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 60px;
+	color: white;
+	font-size: 20px;
+}
+#navlist li img {
+	margin-top: 10px;
+	border: 0px solid black;
+}
+
+#photomanipulator-text{
+	margin-top: 250px;
+	margin-left: 300px;
+	display: none;
 }
