@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="ie-fix.css" type="text/css">
 		<![endif]-->
 		<link rel="stylesheet" href="portfolio.css" type="text/css">
-		<script type="text/javascript" src="jquery.js"></script>  
+
 		<script type="text/javascript">                                         
 		$(document).ready(function() {
 		});
