@@ -1,3 +1,13 @@
 .content{
 	background: url('background-portfolio.jpg');
 }
+.thumbs{
+	list-style-type: none;
+	display: inline;
+	padding-left: 40px;
+	height: 75px;
+}
+
+#slideshow{
+	width: 70%;
+}
