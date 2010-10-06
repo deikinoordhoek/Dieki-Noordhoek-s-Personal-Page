@@ -27,13 +27,13 @@
 			<div class = "main">
 				<div class = "images">
 					<div class = "row">
-						<img src="images/thumbnail1.png">
+						<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail1.jpg') no-repeat 20px 20px;">
 					</div>
 					<div class = "row">
-						<img src="images/thumbnail3.png">
+						<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail3.jpg') no-repeat 20px 20px;">
 					</div>
 					<div class = "row">
-						<img src="images/thumbnail2.png">
+						<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail2.jpg') no-repeat 20px 20px;">
 					</div>
 				</div>
 			</div>		
