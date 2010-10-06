@@ -2,6 +2,9 @@
 	<head>
 		<title>Dieki Noordhoek</title>
 		<link rel="stylesheet" href="main.css" type="text/css">
+		<!--[if IE]>
+		<link rel="stylesheet" href="ie-fix.css" type="text/css">
+		<![endif]-->
 		<link rel="stylesheet" href="portfolio.css" type="text/css">
 		<script type="text/javascript" src="jquery.js"></script>  
 		<script type="text/javascript">                                         
@@ -22,7 +25,17 @@
 				</div>
 			</div>
 			<div class = "main">
-				
+				<div class = "images">
+					<div class = "row">
+						<img src="images/thumbnail1.png">
+					</div>
+					<div class = "row">
+						<img src="images/thumbnail3.png">
+					</div>
+					<div class = "row">
+						<img src="images/thumbnail2.png">
+					</div>
+				</div>
 			</div>		
 		</div>	
 	</body>

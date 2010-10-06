@@ -6,7 +6,7 @@ body{
 .content{
 	background: url('background.jpg');	
 	height: 100%;
-	width: 110%;
+	width: 100%;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -15,7 +15,6 @@ body{
 .header {
 	background: url('header-background.png');
 	margin-left: -10px;
-	margin-right: -10px;
 	margin-top: -10px;
 	
 }

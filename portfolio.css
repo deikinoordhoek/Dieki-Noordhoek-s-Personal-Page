@@ -1,13 +1,15 @@
+body{
+	overflow: auto;
+}
 .content{
 	background: url('background-portfolio.jpg');
 }
-.thumbs{
-	list-style-type: none;
-	display: inline;
-	padding-left: 40px;
-	height: 75px;
+.main{
+	margin-top: 50px;
 }
-
-#slideshow{
-	width: 70%;
+.row {
+	float: left;
+	margin-left: 60px;
+	width: 258px;
+	height: 258px;
 }
