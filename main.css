@@ -2,31 +2,38 @@ body{
 	background: #222;
 	overflow: hidden;
 }
+
 .content{
 	background: url('background.jpg');	
 	height: 100%;
 	width: 110%;
-	margin-left: -10px;
-	margin-right: -10px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
+
 .header {
 	background: url('header-background.png');
-
 	margin-left: -10px;
 	margin-right: -10px;
 	margin-top: -10px;
+	
 }
+
 #navlist a {
 	text-decoration: none;
 	color: #eee;
 }
+
 #navlist li {
 	display: inline;
 	list-style-type: none;
 	padding-right: 60px;
 	color: white;
 	font-size: 20px;
+	height: 50px;
 }
+
 #navlist li img {
 	margin-top: 10px;
 	border: 0px solid black;
@@ -35,5 +42,10 @@ body{
 #photomanipulator-text{
 	margin-top: 250px;
 	margin-left: 300px;
-	display: none;
+
+}
+#see-artwork-text{
+	margin-left: 285px;
+	margin-top: 30px;
+	border: 0px solid black;
 }
