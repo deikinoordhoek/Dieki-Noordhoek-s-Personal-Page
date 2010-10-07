@@ -2,12 +2,13 @@ body{
 	overflow: auto;
 }
 
-.main{
-	margin-top: 50px;
-}
 .row {
 	float: left;
 	margin-left: 60px;
 	width: 258px;
 	height: 258px;
+}
+
+.row img {
+	margin-top: 50px;
 }

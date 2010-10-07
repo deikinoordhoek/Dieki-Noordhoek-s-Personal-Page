@@ -1,42 +1,59 @@
 <html>
 	<head>
 		<title>Dieki Noordhoek</title>
-		<link rel="stylesheet" href="main.css" type="text/css">
+		<link rel="stylesheet" href="css/main.css" type="text/css">
 		<!--[if IE]>
-		<link rel="stylesheet" href="ie-fix.css" type="text/css">
+		<link rel="stylesheet" href="css/ie-fix.css" type="text/css">
 		<![endif]-->
-		<link rel="stylesheet" href="portfolio.css" type="text/css">
-
-		<script type="text/javascript">                                         
-		$(document).ready(function() {
+		<link rel="stylesheet" href="css/portfolio.css" type="text/css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+		<script type="text/javascript">
+		$(function() {
+			$('a.lightbox').lightBox(); // Select all links that contains lightbox in the attribute rel
 		});
-		</script>  
+		</script>
 	</head>
 	<body>
-		<div class = "content">
+		<div class = "content" style="background: url('images/background-portfolio.jpg')">
 			<div class = "header">
 				<div id = "navlist">			
 					<ul>
-						<li><a href="index.html"><img src="home.png"></a></li>
-						<li><a href="http://diekisdreamings.blogspot.com"><img src="blog-link.png"></a></li>
-						<li><a href="portfolio"><img src="portfolio-link.png"></a></li>
-						<li><a href="#"><img src="aboutme-link.png"></a></li>
+						<li><a href="index.html"><img src="images/home.png"></a></li>
+						<li><a href="http://diekisdreamings.blogspot.com"><img src="images/blog-link.png"></a></li>
+						<li><a href="portfolio"><img src="images/portfolio-link.png"></a></li>
+						<li><a href="#"><img src="images/aboutme-link.png"></a></li>
 					</ul>
 				</div>
 			</div>
 			<div class = "main">
 				<div class = "images">
 					<div class = "row">
-						<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail1.jpg') no-repeat 20px 20px;">
+						<a href="images/image1.jpg" class="lightbox">
+							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail1.jpg') no-repeat 20px 20px;">
+						</a>
+						<a href="images/image4.jpg" class="lightbox">
+							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail4.jpg') no-repeat 20px 20px;">
+						</a>
 					</div>
 					<div class = "row">
-						<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail3.jpg') no-repeat 20px 20px;">
+						<a href="images/image2.jpg" class="lightbox">
+							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail3.jpg') no-repeat 20px 20px;">
+						</a>
+						<a href="images/image5.jpg" class="lightbox">
+							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail5.jpg') no-repeat 20px 20px;">
+						</a>
+
 					</div>
 					<div class = "row">
-						<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail2.jpg') no-repeat 20px 20px;">
+						<a href="images/image3.jpg" class="lightbox">
+							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail2.jpg') no-repeat 20px 20px;">
+						</a>
 					</div>
 				</div>
 			</div>		
 		</div>	
+
 	</body>
 </html>
