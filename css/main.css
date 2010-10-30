@@ -43,8 +43,8 @@ body{
 	margin-top: 175px;
 	margin-left: 300px;
 	border: 0px solid black;
-	opacity: 0;
-	filter: alpha(opacity=40);
+	display: none;
+
 }
 #photomanipulator-text2{
 	margin-top: 20px;
@@ -60,7 +60,7 @@ body{
 }
 
 #see-artwork-text{
-	margin-left: 285px;
+	margin-left: 305px;
 	margin-top: 30px;
 	border: 0px solid black;
 	display: none;

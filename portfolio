@@ -30,25 +30,25 @@
 			<div class = "main">
 				<div class = "images">
 					<div class = "row">
-						<a href="images/image1.jpg" class="lightbox">
-							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail1.jpg') no-repeat 20px 20px;">
+						<a href="images/image1.jpg" class="lightbox" >
+							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail1.jpg') no-repeat 20px 20px; border: 0px solid black;">
 						</a>
 						<a href="images/image4.jpg" class="lightbox">
-							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail4.jpg') no-repeat 20px 20px;">
+							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail4.jpg') no-repeat 20px 20px; border: 0px solid black;">
 						</a>
 					</div>
 					<div class = "row">
 						<a href="images/image2.jpg" class="lightbox">
-							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail3.jpg') no-repeat 20px 20px;">
+							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail3.jpg') no-repeat 20px 20px; border: 0px solid black;">
 						</a>
 						<a href="images/image5.jpg" class="lightbox">
-							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail5.jpg') no-repeat 20px 20px;">
+							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail5.jpg') no-repeat 20px 20px; border: 0px solid black;">
 						</a>
 
 					</div>
 					<div class = "row">
 						<a href="images/image3.jpg" class="lightbox">
-							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail2.jpg') no-repeat 20px 20px;">
+							<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail2.jpg') no-repeat 20px 20px; border: 0px solid black;">
 						</a>
 					</div>
 				</div>

@@ -17,3 +17,7 @@ body{
 #content{
 	display: block;
 }
+
+.lightbox{
+	border: 0px solid black;
+}
