@@ -3,7 +3,7 @@ body{
 	overflow: auto;
 }
 .throbber{
-	margin-top: 400px;
+	margin-top: 200px;
 }
 #content{
 	display: none;
