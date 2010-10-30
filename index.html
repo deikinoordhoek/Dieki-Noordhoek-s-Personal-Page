@@ -2,13 +2,15 @@
 	<head>
 		<title>Dieki Noordhoek</title>
 		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<!--[if IE]>
 		<link rel="stylesheet" href="css/ie-fix.css" type="text/css">
 		<![endif]-->
 
 	</head>
 	<body>
-		<div class = "content" style="background: url('images/background.jpg');">
+		<div class = "throbber"><center><img src = "images/throbber.gif"></center></div>
+		<div id = "content" style="background: url('images/background.jpg');">
 			<div class = "header">
 				<div id = "navlist">			
 					<ul>
@@ -25,4 +27,9 @@
 			</div>		
 		</div>	
 	</body>
+	<script>
+		$(window).load(function() {
+			document.getElementById("content").style.display = "block";
+		})
+	</script>
 </html>

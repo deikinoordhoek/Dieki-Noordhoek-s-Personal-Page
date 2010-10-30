@@ -1,10 +1,12 @@
 body{
-	background: #222;
+	background: white;
 	overflow: auto;
 }
-
-.content{
-
+.throbber{
+	
+}
+#content{
+	display: none;
 	height: 100%;
 	width: 100%;
 	position: absolute;
