@@ -16,6 +16,7 @@ body{
 
 #content{
 	display: block;
+	top: 0px !important;
 }
 
 .lightbox{
