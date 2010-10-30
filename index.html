@@ -2,7 +2,7 @@
 	<head>
 		<title>Dieki Noordhoek</title>
 		<link rel="stylesheet" href="css/main.css" type="text/css">
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
 		<!--[if IE]>
 		<link rel="stylesheet" href="css/ie-fix.css" type="text/css">
 		<![endif]-->
@@ -22,14 +22,22 @@
 				</div>
 			</div>
 			<div class = "main">
-				<a href="portfolio"><img id="photomanipulator-text" src="images/photomanipulator.png">
+				<a href="portfolio"><img id="photomanipulator-text1" src="images/photomanipulator.png">
+				<img id="photomanipulator-text2" src="images/graphicsdesigner.png">
+				<img id="photomanipulator-text3" src="images/programmer.png">
 				<img id="see-artwork-text" src="images/see-artwork.png"></a>
 			</div>		
 		</div>	
 	</body>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>
 		$(window).load(function() {
 			$("#content").fadeIn("slow");
+			$("#photomanipulator-text1").delay(1000).fadeIn("slow");
+			$("#photomanipulator-text2").delay(1500).fadeIn("slow");
+			$("#photomanipulator-text3").delay(2000).fadeIn("slow");
+			$("#see-artwork-text").delay(3000).fadeIn("slow");
+			
 		})
 	</script>
 </html>

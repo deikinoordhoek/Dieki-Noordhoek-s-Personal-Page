@@ -39,13 +39,28 @@ body{
 	border: 0px solid black;
 }
 
-#photomanipulator-text{
+#photomanipulator-text1{
 	margin-top: 175px;
 	margin-left: 300px;
 	border: 0px solid black;
+	display: none;
 }
+#photomanipulator-text2{
+	margin-top: 20px;
+	margin-left: 300px;
+	border: 0px solid black;
+	display: none;
+}
+#photomanipulator-text3{
+	margin-top: 20px;
+	margin-left: 300px;
+	border: 0px solid black;
+	display: none;
+}
+
 #see-artwork-text{
 	margin-left: 285px;
 	margin-top: 30px;
 	border: 0px solid black;
+	display: none;
 }
