@@ -33,11 +33,12 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>
 		$(window).load(function() {
-			$("#content").animate({top:0}, 1000);
-			$("#photomanipulator-text1").delay(1200).fadeIn("slow");
-			$("#photomanipulator-text2").delay(1700).fadeIn("slow");
-			$("#photomanipulator-text3").delay(2200).fadeIn("slow");
-			$("#see-artwork-text").delay(3200).fadeIn("slow");
+			$(".throbber").fadeOut("fast");
+			$("#content").delay(300).animate({top:0}, 1000);
+			$("#photomanipulator-text1").delay(1400).fadeIn("slow");
+			$("#photomanipulator-text2").delay(1900).fadeIn("slow");
+			$("#photomanipulator-text3").delay(2400).fadeIn("slow");
+			$("#see-artwork-text").delay(3400).fadeIn("slow");
 			
 		})
 	</script>
