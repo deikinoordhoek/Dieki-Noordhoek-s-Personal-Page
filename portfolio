@@ -16,7 +16,7 @@
 		</script>
 	</head>
 	<body>
-		<div class = "content" style="background: url('images/background-portfolio.jpg')">
+		<div id = "content" style="background: url('images/background-portfolio.jpg')">
 			<div class = "header">
 				<div id = "navlist">			
 					<ul>

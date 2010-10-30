@@ -1,5 +1,6 @@
 body{
 	overflow: auto;
+	background: #333;
 }
 
 .row {
@@ -11,4 +12,8 @@ body{
 
 .row img {
 	margin-top: 50px;
+}
+
+#content{
+	display: block;
 }
