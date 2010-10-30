@@ -1,16 +1,16 @@
 body{
-	background: #333;
+	background: #222;
 	overflow: auto;
 }
 .throbber{
 	margin-top: 200px;
 }
 #content{
-	display: none;
+
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	top: 0px;
+	top: 960px;
 	left: 0px;
 }
 
