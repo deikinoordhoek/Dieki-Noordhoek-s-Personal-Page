@@ -7,6 +7,7 @@
 		<![endif]-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+		<script type="text/javascript" src="js/jquery.history.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
 		<script type="text/javascript">
 		$(function() {
@@ -50,7 +51,7 @@
 						</div>
 						<div class = "row">
 							<a href="images/image2.jpg" class="lightbox">
-								<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail3.jpg') no-repeat 20px 20px; border: 0px solid black;">
+								<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail2.jpg') no-repeat 20px 20px; border: 0px solid black;">
 							</a>
 							<a href="images/image5.jpg" class="lightbox">
 								<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail5.jpg') no-repeat 20px 20px; border: 0px solid black;">
@@ -59,7 +60,7 @@
 						</div>
 						<div class = "row">
 							<a href="images/image3.jpg" class="lightbox">
-								<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail2.jpg') no-repeat 20px 20px; border: 0px solid black;">
+								<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail3.jpg') no-repeat 20px 20px; border: 0px solid black;">
 							</a>
 							<a href="images/image6.jpg" class="lightbox">
 								<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail6.jpg') no-repeat 20px 20px; border: 0px solid black;">
@@ -78,6 +79,20 @@
 	</body>
 		
 	<script>
+		jQuery(document).ready(function($){
+		
+		    $.history.init(function(hash){
+		        if(hash == "") {
+		            // initialize your app
+		        } else {
+				if (hash == "portfolio"){
+					showPortfolio();
+				}
+		            // restore the state from hash
+		        }
+		    });
+		});
+
 		$(window).load(function() {
 			document.getElementById("throbber-image").src = "images/ajax-loader-done.gif";
 			$(".portfolio-div").fadeOut(1);
@@ -92,10 +107,12 @@
 
 		})
 		function showPortfolio() {
+			jQuery.history.load("portfolio");
 			$(".portfolio-div").css("display", "block");
 			$(".main-page").delay(200).fadeOut(500);
 			$(".main-page").delay(200).animate({width:0}, 1000);
 			$(".portfolio-div").delay(200).animate({left:0}, 1000);
+			
 			$('a.lightbox').lightBox();
 			
 		}
