@@ -19,18 +19,18 @@
 		<div class = "throbber"><center><img src="images/loading-banner.jpg">
 			<br><img id = "throbber-image" src = "images/ajax-loader.gif"></center>
 		</div>
-		<div id = "content" style="background: url('images/background.jpg');">
+		<div id = "content" style="background: url('images/background.jpg'); background-repeat: no-repeat;">
 			<div class = "header">
 				<div id = "navlist">			
 					<ul>
-						<li><a href="index.html"><img src="images/home.png"></a></li>
+						<li><a href="index.html" onclick="hidePortfolio()"><img src="images/home.png"></a></li>
 						<li><a href="http://diekisdreamings.blogspot.com"><img src="images/blog-link.png"></a></li>
 						<li><a href="#" onclick="showPortfolio()"><img src="images/portfolio-link.png"></a></li>
 						<li><a href="#"><img src="images/aboutme-link.png"></a></li>
 					</ul>
 				</div>
 			</div>
-			<div class = "main-page">			
+			<div class = "main-page" style="width: 1280px;">			
 				<div class = "main">
 					<a href="#" onclick="showPortfolio()"><img id="photomanipulator-text1" src="images/photomanipulator.jpg">
 					<img id="photomanipulator-text2" src="images/graphicsdesigner.jpg">
@@ -48,6 +48,7 @@
 							<a href="images/image4.jpg" class="lightbox">
 								<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail4.jpg') no-repeat 20px 20px; border: 0px solid black;">
 							</a>
+							<a href = "#" onclick="hidePortfolio()"><img src="images/go-back.png" onmouseover="this.src='images/go-back-glow.png'" onmouseout="this.src='images/go-back.png'"></a>
 						</div>
 						<div class = "row">
 							<a href="images/image2.jpg" class="lightbox">
@@ -66,9 +67,11 @@
 								<img src="images/thumbnail_frame.png" style="background: url('images/thumbnail6.jpg') no-repeat 20px 20px; border: 0px solid black;">
 							</a>
 						</div>
-					
+
 					</div>
+					
 				</div>	
+
 			</div>		
 		</div>	
 		<img src="images/ajax-loader-done.jpg" style="display:none;">
@@ -86,7 +89,11 @@
 		            // initialize your app
 		        } else {
 				if (hash == "portfolio"){
-					showPortfolio();
+					hidePortfolio();
+				} else { 
+					if (hash == "main"){
+						showPortfolio();
+					}
 				}
 		            // restore the state from hash
 		        }
@@ -107,11 +114,21 @@
 
 		})
 		function showPortfolio() {
-			jQuery.history.load("portfolio");
+
 			$(".portfolio-div").css("display", "block");
 			$(".main-page").delay(200).fadeOut(500);
 			$(".main-page").delay(200).animate({width:0}, 1000);
 			$(".portfolio-div").delay(200).animate({left:0}, 1000);
+			jQuery.history.load("portfolio");			
+			$('a.lightbox').lightBox();
+			
+		}
+		function hidePortfolio() {
+
+			$(".main-page").delay(600).fadeIn(500);
+			$(".portfolio-div").delay(200).animate({left:1280}, 1000);
+			window.setTimeout('$(".portfolio-div").css("display", "none");', 1200);
+			jQuery.history.load("main");
 			
 			$('a.lightbox').lightBox();
 			
