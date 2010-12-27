@@ -82,23 +82,7 @@
 	</body>
 		
 	<script>
-		jQuery(document).ready(function($){
 		
-		    $.history.init(function(hash){
-		        if(hash == "") {
-		            // initialize your app
-		        } else {
-				if (hash == "portfolio"){
-					hidePortfolio();
-				} else { 
-					if (hash == "main"){
-						showPortfolio();
-					}
-				}
-		            // restore the state from hash
-		        }
-		    });
-		});
 
 		$(window).load(function() {
 			document.getElementById("throbber-image").src = "images/ajax-loader-done.gif";
@@ -119,7 +103,6 @@
 			$(".main-page").delay(200).fadeOut(500);
 			$(".main-page").delay(200).animate({width:0}, 1000);
 			$(".portfolio-div").delay(200).animate({left:0}, 1000);
-			jQuery.history.load("portfolio");			
 			$('a.lightbox').lightBox();
 			
 		}
@@ -128,7 +111,7 @@
 			$(".main-page").delay(600).fadeIn(500);
 			$(".portfolio-div").delay(200).animate({left:1280}, 1000);
 			window.setTimeout('$(".portfolio-div").css("display", "none");', 1200);
-			jQuery.history.load("main");
+			
 			
 			$('a.lightbox').lightBox();
 			
