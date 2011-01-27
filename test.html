@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+
+<script>
+	function RequestPermission (callback) {
+	   window.webkitNotifications.requestPermission(callback);
+	}
+ 
+	function showNotification(){
+	   if (window.webkitNotifications.checkPermission() > 0) {
+	      RequestPermission(showNotification);
+	   }
+	   else {
+	      window.webkitNotifications.createNotification("","Title", "Body").show();
+	   }
+	}
+
+</script>
+<a href="#" onclick="showNotification()">Click here</a>
+</body>
